@@ -52,4 +52,4 @@
 
 - As a user, I want to be able to send invitations to join a call via email or a shareable link, so that I can invite people who are not yet part of my contact list.
 
-As a user, I want to be able to use my mobile device's camera and microphone for the video call, so that I can participate in a call even if I don't have access to a computer.
+- As a user, I want to be able to use my mobile device's camera and microphone for the video call, so that I can participate in a call even if I don't have access to a computer.

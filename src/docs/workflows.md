@@ -57,15 +57,18 @@
 
 ## Workflow 5: User Management
 
-- User A logs into the application and c
-- licks on the "Profile" button.
+- User logs in or creates a new account.
 
-- The application displays User A's profile information, including their name, profile picture, and status (e.g., "Online", "Away", "Busy").
+- User is directed to their profile page where they can view and edit their information.
 
-- User A can edit their profile information, including their name and profile picture.
+- User can view their call history, including missed, received, and made calls.
 
-- User A can view their call history, including the date and time of each call and the other user(s) involved in the call.
+- User can see a list of their contacts, their online status, and availability status.
 
-- User A can view the online status of other users in their contact list.
+- User can initiate a call or chat with a contact by selecting them from the contacts list.
 
-- User A can block or report other users who are abusive or harassing.
+- User can set their own availability status to "away" or "busy".
+
+- User can block or report another user who is abusive or harassing.
+
+- User can log out of the application.

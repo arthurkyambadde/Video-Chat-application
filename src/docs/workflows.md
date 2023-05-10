@@ -16,7 +16,7 @@
 
 - If User B accepts the call, the video call is established and both users can see and hear each other.
 
-## Workflow 2: Scheduling a Video Call
+## Workflow 2: Scheduling a Video Call (One week)
 
 - User A logs into the application and clicks on the "Schedule a Video Call" button.
 
@@ -28,7 +28,7 @@
 
 - When the scheduled time arrives, the application automatically initiates the video call for all invited users who accept the invitation.
 
-## Workflow 3: Chatting During a Video Call
+## Workflow 3: Chatting During a Video Call (One week)
 
 - User A initiates a video call with User B using Workflow 1.
 
@@ -42,7 +42,7 @@
 
 - The messages are displayed in real-time in both users' chat windows.
 
-## Workflow 4: Creating a Group Chat
+## Workflow 4: Creating a Group Chat (One week)
 
 - User A logs into the application and clicks on the "Create a Group Chat" button.
 
@@ -55,7 +55,7 @@
 - Each invited user can accept or decline the invitation to join the group.
   Once a user has joined the group, they can send messages to the group chat and see messages from other users in real-time.
 
-## Workflow 5: User Management
+## Workflow 5: User Management (One week)
 
 - User logs in or creates a new account.
 

@@ -1,6 +1,6 @@
 #### Video chat application workflows
 
-## Workflow 1: Initiating a Video Call
+## Workflow 1: Initiating a Video Call (One week)
 
 - User A logs into the application and clicks on the "Start a Video Call" button.
 

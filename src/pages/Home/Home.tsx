@@ -8,9 +8,15 @@ function Home() {
     <nav className={styles.home_container}>
       <img src={logo} alt="logo" className={styles.logo} />
       <div className={styles.details}>
-        <span>About Us</span>
-        <span>Help</span>
-        <span>Feedback</span>
+        <a href="#" className={styles.navigation_link}>
+          About Us
+        </a>
+        <a href="#" className={styles.navigation_link}>
+          Help
+        </a>
+        <a href="#" className={styles.navigation_link}>
+          Feedback
+        </a>
         <img
           src={settingsIcon}
           alt="settings icon"

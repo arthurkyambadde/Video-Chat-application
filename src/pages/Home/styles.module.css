@@ -18,8 +18,23 @@
   cursor: pointer;
 }
 
+.navigation_link {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navigation_link:hover {
+  color: #4869c5;
+}
+
 .settings {
   width: 24px;
   height: 24px;
   cursor: pointer;
+}
+
+.settings:hover {
+  transform: scale(1.1);
 }

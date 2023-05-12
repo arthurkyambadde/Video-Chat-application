@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import avatar from "../../assets/avatar.jpg";
-
 import logo from "../../assets/logo.png";
+
 function OnBoarding() {
   const [dateString, setDateString] = useState("");
 
@@ -20,7 +20,7 @@ function OnBoarding() {
         minute: "numeric",
         hour12: true,
       });
-      setDateString(`${date} ${time}`);
+      setDateString(`${time}  ${date}`);
     }, 1000);
     return () => clearInterval(intervalId);
   }, []);

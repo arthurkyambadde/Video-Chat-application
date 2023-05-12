@@ -1,10 +1,11 @@
 import React from "react";
-import "./App.css";
+import OnBoarding from "./pages/OnBoarding/OnBoarding";
+import styles from "./app.module.css";
 
 function App() {
   return (
-    <div className="App">
-      <div>Hello World</div>
+    <div className={styles.application}>
+      <OnBoarding />
     </div>
   );
 }

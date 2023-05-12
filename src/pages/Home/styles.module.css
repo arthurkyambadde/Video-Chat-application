@@ -18,6 +18,10 @@
   cursor: pointer;
 }
 
+.logo:hover {
+  transform: scale(1.1);
+}
+
 .navigation_link {
   text-decoration: none;
   color: #333333;

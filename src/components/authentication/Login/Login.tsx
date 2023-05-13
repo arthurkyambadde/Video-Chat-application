@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import GoogleIcon from "../../icons/Google";
 import styles from "./styles.module.css";
 
 function Login() {
@@ -34,6 +35,15 @@ function Login() {
         Don’t have an account?
         <span className={styles.auth_action_tag}>Signup</span>
       </p>
+      <div className={styles.auth_type__border_line}>
+        <div className={styles.line}></div>
+        <span>Or</span>
+        <div className={styles.line}></div>
+      </div>
+      <div className={styles.signin_With__google_container}>
+        <GoogleIcon />
+        <p>Login with Google</p>
+      </div>
     </form>
   );
 }

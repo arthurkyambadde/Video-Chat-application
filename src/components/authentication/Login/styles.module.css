@@ -50,3 +50,39 @@
   color: #2f89fc;
   margin-left: 8px;
 }
+
+.line {
+  border: 1px solid rgba(86, 84, 84, 0.188);
+  width: 40%;
+  height: 1px;
+}
+
+.auth_type__border_line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.signin_With__google_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 28px;
+  cursor: pointer;
+}
+
+.signin_With__google_container:hover {
+  background-color: #99999947;
+  border: 1px solid white;
+}

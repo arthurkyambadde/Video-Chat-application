@@ -26,7 +26,7 @@
 }
 
 .form_button {
-  background: #0e64d2;
+  background: #2f89fc;
   border-radius: 5px;
   height: 48px;
   font-style: normal;
@@ -35,6 +35,11 @@
   color: rgba(255, 255, 255, 0.9);
   border: none;
   margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.form_button:hover {
+  background-color: #2f88fce4;
 }
 
 .account_tag {
@@ -49,6 +54,7 @@
 .auth_action_tag {
   color: #2f89fc;
   margin-left: 8px;
+  cursor: pointer;
 }
 
 .line {

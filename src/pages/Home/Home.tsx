@@ -6,6 +6,8 @@ import Signup from "../../components/authentication/Signup/Signup";
 import Login from "../../components/authentication/Login/Login";
 
 function Home() {
+  const [auth, setAuth] = useState(false);
+
   return (
     <div className={styles.home_Wrapper}>
       <nav className={styles.nav_container}>
@@ -28,7 +30,7 @@ function Home() {
         </div>
       </nav>
       <div className={styles.registration_form}>
-        <Login />
+        {auth ? <Signup setAuth={setAuth} /> : <Login setAuth={setAuth} />}
       </div>
     </div>
   );

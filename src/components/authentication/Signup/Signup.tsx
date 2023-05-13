@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import GoogleIcon from "../../icons/Google";
 import styles from "./styles.module.css";
 
-function Signup() {
+type SignupProps = {
+  setAuth: (value: boolean) => void;
+};
+
+function Signup(props: SignupProps) {
+  const { setAuth } = props;
+
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -56,7 +62,9 @@ function Signup() {
       </button>
       <p className={styles.account_tag}>
         Already have an account?{" "}
-        <span className={styles.auth_action_tag}>Login</span>
+        <span className={styles.auth_action_tag} onClick={() => setAuth(false)}>
+          Login
+        </span>
       </p>
       <div className={styles.auth_type__border_line}>
         <div className={styles.line}></div>

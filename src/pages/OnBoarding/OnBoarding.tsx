@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import avatar from "../../assets/avatar.jpg";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 function OnBoarding() {
   const [dateString, setDateString] = useState("");
@@ -32,6 +33,7 @@ function OnBoarding() {
         <div className={styles.details}>
           <span>{dateString}</span>
           <img src={avatar} alt="" className={styles.user_avatar} />
+          <Link to="/home">Try</Link>
         </div>
       </nav>
     </div>

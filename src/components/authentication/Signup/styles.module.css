@@ -14,7 +14,7 @@
 }
 
 .input_element {
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(78, 76, 76, 0.4);
   border-radius: 10px;
   height: 48px;
   margin-bottom: 28px;
@@ -23,6 +23,18 @@
   font-weight: 400;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.7);
+  caret-color: #2f88fce4;
+  caret-color: 2px;
+  text-align: center;
+}
+
+.input_element:focus {
+  outline: 2px solid #2f88fce4;
+  border: 2px solid white;
+}
+
+.input_element:focus::placeholder {
+  color: #2f88fce4;
 }
 
 .form_button {

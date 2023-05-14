@@ -34,6 +34,7 @@ function Login(props: LoginProps) {
         placeholder="Enter password"
         className={styles.input_element}
       />
+      <p className={styles.forgot_password}>Forgot Password ?</p>
       <button type="submit" className={styles.form_button}>
         Login
       </button>

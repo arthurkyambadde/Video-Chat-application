@@ -25,6 +25,18 @@
   color: rgba(0, 0, 0, 0.7);
 }
 
+.forgot_password {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2f89fc;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .form_button {
   background: #2f89fc;
   border-radius: 5px;

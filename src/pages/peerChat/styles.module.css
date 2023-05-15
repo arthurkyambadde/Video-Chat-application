@@ -1,0 +1,12 @@
+.peerchat_container {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.video_player {
+  background-color: black;
+  width: 100%;
+  height: 300px;
+}

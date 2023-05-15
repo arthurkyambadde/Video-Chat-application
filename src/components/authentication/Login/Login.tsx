@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import GoogleIcon from "../../icons/Google";
 import styles from "./styles.module.css";
+import { Link } from "react-router-dom";
 
 type LoginProps = {
   setAuth: (value: boolean) => void;

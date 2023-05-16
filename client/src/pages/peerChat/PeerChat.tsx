@@ -122,11 +122,13 @@ function PeerChat() {
   };
 
   let remoteStream: MediaStream;
+
   let createOffer = async (MemberId: any) => {
+    await createPeerConnection(MemberId);
+
     let offer = await peerConnection.createOffer();
     await peerConnection.setLocalDescription(offer);
     //send message to joined client
-    await createPeerConnection(MemberId);
 
     client.sendMessageToPeer(
       {

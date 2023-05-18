@@ -4,14 +4,17 @@ const cors = require("cors");
 
 const io = require("socket.io")(server, {
   cors: {
-    origin: "*",
+    origin: [
+      "http://localhost:3000",
+      "http://videochatapplication-31l13vofd-arthurkyambadde.vercel.app",
+    ],
     methods: ["GET", "POST"],
   },
 });
 
 app.use(cors());
 
-const PORT = "videochatapplication-31l13vofd-arthurkyambadde.vercel.app";
+const PORT = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
   res.send("Running server");

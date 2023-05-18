@@ -5,14 +5,19 @@ const uuid = require("uuid");
 
 const io = require("socket.io")(server, {
   cors: {
-    origin: "*",
+    origin: true,
     methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type"],
+    allowedHeaders: ["Access-Control-Allow-Origin"],
     credentials: true,
   },
 });
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    credentials: true,
+  })
+);
 
 const PORT = 5000;
 
@@ -21,7 +26,7 @@ app.get("/", (req, res) => {
 });
 
 io.on("connection", (socket) => {
-  const clientId = uuid();
+  const clientId = `arthur`;
 
   socket.emit("me", clientId);
 

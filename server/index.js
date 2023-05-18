@@ -11,10 +11,10 @@ const io = require("socket.io")(server, {
 
 app.use(cors());
 
-const PORT = 5000;
+const PORT = "videochatapplication-31l13vofd-arthurkyambadde.vercel.app";
 
 app.get("/", (req, res) => {
-  res.send("Running");
+  res.send("Running server");
 });
 
 io.on("connection", (socket) => {

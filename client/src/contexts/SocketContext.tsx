@@ -4,7 +4,8 @@ import Peer from "simple-peer";
 
 const SocketContext = createContext({});
 
-const socket = io("http://localhost:5000");
+const socket = io("videochatapplication-31l13vofd-arthurkyambadde.vercel.app");
+console.log(socket, "socket");
 
 const ContextProvider = ({ children }: any) => {
   const [callAccepted, setCallAccepted] = useState(false);

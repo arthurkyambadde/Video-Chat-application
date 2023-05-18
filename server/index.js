@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 });
 
 io.on("connection", (socket) => {
-  const clientId = `arthur`;
+  const clientId = uuid();
 
   socket.emit("me", clientId);
 

@@ -1,0 +1,26 @@
+{
+  "name": "videochatapplication",
+  "version": "1.0.0",
+  "description": "backend for video chat appllication",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurkyambadde/videochatapplication.git"
+  },
+  "author": "arthur kyambadde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthurkyambadde/videochatapplication/issues"
+  },
+  "homepage": "https://github.com/arthurkyambadde/videochatapplication#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "react-copy-to-clipboard": "^5.1.0",
+    "socket.io": "^4.6.1"
+  }
+}

@@ -28,9 +28,9 @@ function PeerChat() {
     setIdToCall(e.target.value);
   };
 
-  {
-    console.log("test", call.isReceiveCall);
-  }
+  useEffect(() => {
+    console.log("test", callAccepted, call);
+  }, [call, callAccepted]);
 
   return (
     <div id="peerchat_videos" className={styles.peerchat_container}>
@@ -72,13 +72,13 @@ function PeerChat() {
           {callAccepted && !callEnded ? (
             <button onClick={leaveCall}>Hang Up</button>
           ) : (
-            <button onClick={callUser(idToCall)}>Call</button>
+            <button onClick={() => callUser(idToCall)}>Call</button>
           )}
         </div>
         <div>
-          <p>Notifications</p>
-          {call.isReceiveCall && callAccepted && (
+          {call.isReceivingCall && (
             <div>
+              <p>Notifications</p>
               <p>{call.name} is calling</p>
               <button onClick={answerCall}>Answer</button>
             </div>

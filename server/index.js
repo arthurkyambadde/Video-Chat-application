@@ -5,8 +5,10 @@ const uuid = require("uuid");
 
 const io = require("socket.io")(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "*",
     methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"],
+    credentials: true,
   },
 });
 

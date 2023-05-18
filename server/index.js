@@ -1,27 +1,27 @@
 const app = require("express")();
 const server = require("http").createServer(app);
 const cors = require("cors");
+const uuid = require("uuid");
 
 const io = require("socket.io")(server, {
   cors: {
-    origin: [
-      "http://localhost:3000",
-      "http://videochatapplication-31l13vofd-arthurkyambadde.vercel.app",
-    ],
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
 
 app.use(cors());
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
 app.get("/", (req, res) => {
   res.send("Running server");
 });
 
 io.on("connection", (socket) => {
-  socket.emit("me", socket.id);
+  const clientId = `myid_${uuid.v4()}`;
+
+  socket.emit("me", clientId);
 
   socket.on("disconnect", () => {
     socket.broadcast.emit("callEnded");

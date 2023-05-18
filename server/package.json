@@ -4,7 +4,7 @@
   "description": "backend for video chat appllication",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "express": "^4.18.2",
     "nodemon": "^2.0.22",
     "react-copy-to-clipboard": "^5.1.0",
-    "socket.io": "^4.6.1"
+    "socket.io": "^4.6.1",
+    "uuid": "^9.0.0"
   }
 }

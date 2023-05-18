@@ -4,7 +4,11 @@ import Peer from "simple-peer";
 
 const SocketContext = createContext({});
 
-const socket = io("videochatapplication-31l13vofd-arthurkyambadde.vercel.app");
+const socket = io(
+  "https://videochatapplication-1kcoadg4u-arthurkyambadde.vercel.app"
+);
+//
+
 console.log(socket, "socket");
 
 const ContextProvider = ({ children }: any) => {

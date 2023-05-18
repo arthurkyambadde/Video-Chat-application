@@ -42,7 +42,7 @@ const ContextProvider = ({ children }: any) => {
       console.log("from who", from, name, signal);
       setCall({ isReceivingCall: true, from, name: callerName, signal });
     });
-  }, []);
+  }, [name]);
 
   const answerCall = () => {
     setCallAccepted(true);

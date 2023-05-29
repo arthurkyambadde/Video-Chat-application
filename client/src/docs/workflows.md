@@ -16,19 +16,7 @@
 
 - If User B accepts the call, the video call is established and both users can see and hear each other.
 
-## Workflow 2: Scheduling a Video Call (One week)
-
-- User A logs into the application and clicks on the "Schedule a Video Call" button.
-
-- The application prompts User A to select one or more users to invite to the call.
-
-- User A selects the users they want to invite and sets the date and time for the call.
-
-- The application sends an email invitation to each invited user with a link to join the call at the scheduled time.
-
-- When the scheduled time arrives, the application automatically initiates the video call for all invited users who accept the invitation.
-
-## Workflow 3: Chatting During a Video Call (One week)
+## Workflow 2: Chatting During a Video Call (One week)
 
 - User A initiates a video call with User B using Workflow 1.
 
@@ -41,6 +29,19 @@
 - User B can reply to the message by typing a response in the chat window and clicking "Send".
 
 - The messages are displayed in real-time in both users' chat windows.
+
+## Workflow 3: Scheduling a Video Call (One week)
+
+- User A logs into the application and clicks on the "Schedule a Video Call" button.
+
+- The application prompts User A to select one or more users to invite to the call.
+
+- User A selects the users they want to invite and sets the date and time for the call.
+
+- The application sends an email invitation to each invited user with a link to join the call at the scheduled time.
+
+- When the scheduled time arrives, the application automatically initiates the video call for all invited users who accept the invitation.
+
 
 ## Workflow 4: Creating a Group Chat (One week)
 

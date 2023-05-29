@@ -16,6 +16,10 @@ const ContextProvider = ({ children }: any) => {
   const [name, setName] = useState("");
   const [call, setCall] = useState<any>({});
   const [me, setMe] = useState("");
+  const [user, setUser] = useState("");
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [textMessage, setTextMessage] = useState("");
+  const [newMessage, setNewMessage] = useState({});
 
   const myVideo = useRef<any>(null);
   const userVideo = useRef<any>();
@@ -40,7 +44,29 @@ const ContextProvider = ({ children }: any) => {
       console.log("from who", from, name, signal);
       setCall({ isReceivingCall: true, from, name: callerName, signal });
     });
-  }, [name]);
+
+    socket.on("userExists", function (data) {
+      console.log("user exists", data);
+    });
+    socket.on("userSet", function (data) {
+      setUser(data.username);
+      setLoggedIn(true);
+    });
+
+    socket.on("newmsg", function (data) {
+      setNewMessage(data);
+      console.log("new message", data);
+    });
+  }, []);
+
+  function sendMessage() {
+    socket.emit("msg", { message: textMessage, user: user });
+    console.log("message sent");
+  }
+
+  function setUsername() {
+    socket.emit("setUsername", name);
+  }
 
   const answerCall = () => {
     setCallAccepted(true);
@@ -108,6 +134,11 @@ const ContextProvider = ({ children }: any) => {
         callUser,
         leaveCall,
         answerCall,
+        setUsername,
+        loggedIn,
+        textMessage,
+        setTextMessage,
+        sendMessage,
       }}
     >
       {children}

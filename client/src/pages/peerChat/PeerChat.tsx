@@ -13,13 +13,21 @@ function PeerChat() {
     call,
     setName,
     me,
-
+    loggedIn,
     callUser,
     leaveCall,
     answerCall,
+    textMessage,
+    setTextMessage,
+    setUsername,
+    sendMessage,
   } = useContext<any>(SocketContext);
 
   const [idToCall, setIdToCall] = useState("");
+
+  const handleMessageInput = (e: any) => {
+    setTextMessage(e.target.value);
+  };
 
   const handleNameInput = (e: any) => {
     setName(e.target.value);
@@ -83,6 +91,24 @@ function PeerChat() {
               <button onClick={answerCall}>Answer</button>
             </div>
           )}
+        </div>
+        <div>
+          {
+            <div>
+              {loggedIn && (
+                <>
+                  <input
+                    type="text"
+                    value={textMessage}
+                    onChange={handleMessageInput}
+                  />
+                  <button onClick={() => sendMessage()}>send message</button>
+                </>
+              )}
+
+              <button onClick={() => setUsername()}>Let me chat!</button>
+            </div>
+          }
         </div>
       </div>
     </div>

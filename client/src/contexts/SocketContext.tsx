@@ -4,9 +4,7 @@ import Peer from "simple-peer";
 
 const SocketContext = createContext({});
 
-const socket = io(
-  "https://videochatapplication-1kcoadg4u-arthurkyambadde.vercel.app"
-);
+const socket = io("http://localhost:5000/");
 //
 
 console.log(socket, "socket");
